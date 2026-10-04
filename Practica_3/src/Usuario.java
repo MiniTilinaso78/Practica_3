@@ -1,5 +1,5 @@
 public class Usuario {
-    String name;
+    String nombre;
     Perfil perfil;
 
 }
