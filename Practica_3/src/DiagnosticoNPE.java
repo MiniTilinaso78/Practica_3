@@ -3,8 +3,9 @@ public class DiagnosticoNPE {
         Usuario usr = new Usuario();
         usr.nombre = "Elena";
 
-        // ¿Qué ocurrirá en la siguiente línea? Deberia ser un null pointer exception
-        System.out.println("Rol del usuario: " + usr.perfil.rol.toUpperCase());
+        if (usr.perfil!=null) {
+            System.out.println("Rol del usuario: " + usr.perfil.rol.toUpperCase());
+        }
     }
 }
 /*
